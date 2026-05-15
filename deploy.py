@@ -8,7 +8,7 @@ role="arn:aws:iam::477010600979:role/service-role/AmazonSageMaker-ExecutionRole-
 boto_session=boto3.Session(region_name="eu-north-1")
 session=sagemaker.Session(boto_session=boto_session)
 
-endpoint_name=f"iris-endpoint"-{int(time.time())}
+endpoint_name=f"iris-endpoint-{int(time.time())}"
 
 model=SKlearnModel(
     model_data="s3://my-ml-model-buckets/model.tar.gz",
