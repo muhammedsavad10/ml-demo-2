@@ -1,5 +1,5 @@
 import sagemaker
-from sagemaker.sklearn.models import SKlearnModel
+from sagemaker.sklearn.model import SKlearnModel
 import time
 import boto3
 
