@@ -10,7 +10,7 @@ session=sagemaker.Session(boto_session=boto_session)
 
 endpoint_name=f"iris-endpoint-{int(time.time())}"
 
-model=SKlearnModel(
+model=SKLearnModel(
     model_data="s3://my-ml-model-buckets/model.tar.gz",
     role=role,
     entry_point="inference.py",
